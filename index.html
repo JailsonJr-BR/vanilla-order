@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script defer="" src="script.js" type="module"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="nav-brand" href="#">Loja</a>
+      <ul class="nav-list">
+        <li><a href="#">Início</a></li>
+        <li><a href="./pages/usuario/meus-pedidos.html">Pedidos</a></li>
+        <li><a href="./pages/painel/gerenciar-pedidos.html">Minha Conta</a></li>
+      </ul>
+    </nav>
+    <main class="loja">
+      <div class="lista-produtos"></div>
+      <div class="carrinho">
+        <h2>Carrinho</h2>
+        <div class="lista-carrinho"></div>
+        <div class="carrinho-finalizar">
+          <p>Total:<span id="total"> 0.00</span></p>
+          <button class="btn-finalizar" id="finalizar">Comprar</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

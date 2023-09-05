@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../styles.css" />
+    <script type="module" src="../../script.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="nav-brand">Loja Painel</a>
+      <ul class="nav-list">
+        <li>
+          <a href="./cadastrar-produtos.html" class="nav-active"
+            >Cadastrar produtos</a
+          >
+        </li>
+        <li>
+          <a href="./gerenciar-produtos.html"
+            >Gerenciar produtos</a
+          >
+        </li>
+        <li>
+          <a href="./gerenciar-pedidos.html">Gerenciar pedidos</a>
+        </li>
+        <li>
+          <a href="../../index.html">Ir para loja</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1 class="cadastro-titulo">Adiciona novo produto</h1>
+      <form id="cadastroProdutos">
+        <label for="nome">Nome do produto</label>
+        <input type="text" id="nome" required />
+        <label for="descricao">Descrição</label>
+        <input type="text" id="descricao" required />
+        <label for="imagem">Link imagem do produto</label>
+        <input type="text" id="imagem" required />
+        <label for="estoque">Estoque</label>
+        <input type="text" id="estoque" required />
+        <label for="valorCusto">Preço de custo</label>
+        <input type="text" id="valorCusto" required />
+        <label for="valorFinal">Preço de venda</label>
+        <input type="text" id="valorFinal" required />
+
+        <input type="submit" value="Cadastrar" onsubmit="cadastroProdutos()" />
+      </form>
+    </main>
+  </body>
+</html>
